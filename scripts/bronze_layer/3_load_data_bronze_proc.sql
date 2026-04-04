@@ -106,6 +106,7 @@ BEGIN
         WITH (
             FIRSTROW = 2,
             FIELDTERMINATOR = ',',
+            ROWTERMINATOR = '0x0d0a', -- This tells SQL to look for the Line Feed (LF)
             TABLOCK
         );
         SET @end_time = GETDATE(); -- End time for loading the erp_cust_az12 table
@@ -127,6 +128,7 @@ BEGIN
         WITH (
             FIRSTROW = 2,
             FIELDTERMINATOR = ',',
+            ROWTERMINATOR = '0x0d0a', -- This tells SQL to look for the Line Feed (LF)
             TABLOCK
         );
         SET @end_time = GETDATE(); -- End time for loading the erp_loc_a101 table
@@ -148,6 +150,7 @@ BEGIN
         WITH (
             FIRSTROW = 2,
             FIELDTERMINATOR = ',',
+            ROWTERMINATOR = '0x0d0a', -- This tells SQL to look for the Line Feed (LF)
             TABLOCK
         );
         SET @end_time = GETDATE(); -- End time for loading the erp_px_cat_g1v2 table
